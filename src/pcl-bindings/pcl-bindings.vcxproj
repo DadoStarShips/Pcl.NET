@@ -164,6 +164,9 @@
     <ClCompile Include="Eigen_Matrix4f.cpp" />
     <ClCompile Include="Eigen_VectorXf.cpp" />
     <ClCompile Include="common.cpp" />
+    <ClCompile Include="ExtractIndicesXYZ.cpp" />
+    <ClCompile Include="ExtractIndicesXYZI.cpp" />
+    <ClCompile Include="ExtractIndicesXYZRGBA.cpp" />
     <ClCompile Include="GaussianKernelPointXYZPointXYZ.cpp" />
     <ClCompile Include="IO.cpp" />
     <ClCompile Include="IterativeClosestPointXYZ_XYZ.cpp" />

@@ -1577,5 +1577,134 @@ namespace Pcl.NET
         public static extern void iterative_closest_point_xyz_xyz_align_guess(IntPtr ptr, IntPtr output, IntPtr guess);
 
         #endregion
+
+        #region ExtractIndicesXYZ
+
+        [DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
+        public static extern IntPtr extractindices_pointxyz_ctor();
+
+        [DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
+        public static extern void extractindices_pointxyz_delete(ref IntPtr ptr);
+
+        [DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
+        public static extern void extractindices_pointxyz_set_input_cloud(IntPtr ptr, IntPtr cloud);
+
+        [DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
+        public static extern IntPtr extractindices_pointxyz_get_input_cloud(IntPtr ptr);
+
+        [DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
+        public static extern IntPtr extractindices_pointxyz_filter_directly(IntPtr ptr, IntPtr output);
+
+        [DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
+        public static extern void extractindices_pointxyz_filter(IntPtr ptr, IntPtr outputCloud);
+
+        [DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
+        public static extern void extractindices_pointxyz_set_filter_indices(IntPtr ptr, ulong row_start, ulong col_start, ulong nb_rows, ulong nb_cols);
+
+        [DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
+        public static extern void extractindices_pointxyz_set_filter_indices_vector(IntPtr ptr, IntPtr indices);
+
+        [DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
+        public static extern void extractindices_pointxyz_get_filter_indices_vector(IntPtr ptr, IntPtr indices);
+
+        [DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
+        public static extern int extractindices_pointxyz_get_keep_organized(IntPtr ptr);
+
+        [DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
+        public static extern void extractindices_pointxyz_set_keep_organized(IntPtr ptr, int keep_organized);
+
+        [DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
+        public static extern int extractindices_pointxyz_get_negative(IntPtr ptr);
+
+        [DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
+        public static extern void extractindices_pointxyz_set_negative(IntPtr ptr, int negative);
+
+        #endregion
+
+        #region ExtractIndicesXYZI
+
+        [DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
+        public static extern IntPtr extractindices_pointxyzi_ctor();
+
+        [DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
+        public static extern void extractindices_pointxyzi_delete(ref IntPtr ptr);
+
+        [DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
+        public static extern void extractindices_pointxyzi_set_input_cloud(IntPtr ptr, IntPtr cloud);
+
+        [DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
+        public static extern IntPtr extractindices_pointxyzi_get_input_cloud(IntPtr ptr);
+
+        [DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
+        public static extern IntPtr extractindices_pointxyzi_filter_directly(IntPtr ptr, IntPtr output);
+
+        [DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
+        public static extern void extractindices_pointxyzi_filter(IntPtr ptr, IntPtr outputCloud);
+
+        [DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
+        public static extern void extractindices_pointxyzi_set_filter_indices(IntPtr ptr, ulong row_start, ulong col_start, ulong nb_rows, ulong nb_cols);
+
+        [DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
+        public static extern void extractindices_pointxyzi_set_filter_indices_vector(IntPtr ptr, IntPtr indices);
+
+        [DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
+        public static extern void extractindices_pointxyzi_get_filter_indices_vector(IntPtr ptr, IntPtr indices);
+
+        [DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
+        public static extern int extractindices_pointxyzi_get_keep_organized(IntPtr ptr);
+
+        [DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
+        public static extern void extractindices_pointxyzi_set_keep_organized(IntPtr ptr, int keep_organized);
+
+        [DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
+        public static extern int extractindices_pointxyzi_get_negative(IntPtr ptr);
+
+        [DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
+        public static extern void extractindices_pointxyzi_set_negative(IntPtr ptr, int negative);
+
+        #endregion
+
+        #region ExtractIndicesXYZRGBA
+
+        [DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
+        public static extern IntPtr extractindices_pointxyzrgba_ctor();
+
+        [DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
+        public static extern void extractindices_pointxyzrgba_delete(ref IntPtr ptr);
+
+        [DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
+        public static extern void extractindices_pointxyzrgba_set_input_cloud(IntPtr ptr, IntPtr cloud);
+
+        [DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
+        public static extern IntPtr extractindices_pointxyzrgba_get_input_cloud(IntPtr ptr);
+
+        [DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
+        public static extern IntPtr extractindices_pointxyzrgba_filter_directly(IntPtr ptr, IntPtr output);
+
+        [DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
+        public static extern void extractindices_pointxyzrgba_filter(IntPtr ptr, IntPtr outputCloud);
+
+        [DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
+        public static extern void extractindices_pointxyzrgba_set_filter_indices(IntPtr ptr, ulong row_start, ulong col_start, ulong nb_rows, ulong nb_cols);
+
+        [DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
+        public static extern void extractindices_pointxyzrgba_set_filter_indices_vector(IntPtr ptr, IntPtr indices);
+
+        [DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
+        public static extern void extractindices_pointxyzrgba_get_filter_indices_vector(IntPtr ptr, IntPtr indices);
+
+        [DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
+        public static extern int extractindices_pointxyzrgba_get_keep_organized(IntPtr ptr);
+
+        [DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
+        public static extern void extractindices_pointxyzrgba_set_keep_organized(IntPtr ptr, int keep_organized);
+
+        [DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
+        public static extern int extractindices_pointxyzrgba_get_negative(IntPtr ptr);
+
+        [DllImport(DllName, CallingConvention = CallingConvention.Cdecl)]
+        public static extern void extractindices_pointxyzrgba_set_negative(IntPtr ptr, int negative);
+
+        #endregion
     }
 }
