@@ -35,11 +35,11 @@ namespace Pcl.NET
         /// <summary>
         /// Get the minimum and maximum allowable radius limits for the model as set by the user
         /// </summary>
-        public abstract void GetRadiusLimits(ref double minRadius, ref double maxRadius);
+        public abstract void GetRadiusLimits(out double minRadius, out double maxRadius);
         /// <summary>
         /// Base method for segmentation of a model in a PointCloud given by <setInputCloud (), setIndices ()>
         /// </summary>
-        public abstract float[] Segment();
+        public abstract void Segment(out VectorInt inliers, out VectorFloat coefficients);
     }
 
     public enum SacModel

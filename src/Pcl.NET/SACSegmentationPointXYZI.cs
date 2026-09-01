@@ -93,30 +93,21 @@ namespace Pcl.NET
             Invoke.sacsegmentation_pointxyzi_set_radius_limits(_ptr, minRadius, maxRadius);
         }
 
-        public override void GetRadiusLimits(ref double minRadius, ref double maxRadius)
+        public override void GetRadiusLimits(out double minRadius, out double maxRadius)
         {
             ThrowIfDisposed();
+            minRadius = 0;
+            maxRadius = 0;
             Invoke.sacsegmentation_pointxyzi_get_radius_limits(_ptr, ref minRadius, ref maxRadius);
         }
 
-        /// <summary>
-        /// Esegue la segmentazione recuperando gli inliers e i coefficienti del modello nativo.
-        /// Nota: Puoi passare direttamente gli oggetti (es. VectorInt o PointIndices) se la tua architettura 
-        /// prevede un operatore di conversione implicita a IntPtr, come accade per gli indici di CropBox.
-        /// </summary>
-        public override float[] Segment()
+        public override void Segment(out VectorInt inliers, out VectorFloat coeff)
         {
             ThrowIfDisposed();
+            inliers = new VectorInt();
+            coeff = new VectorFloat();
 
-            float[] coefficients;
-            using (var inliers = new VectorInt())
-            using (var coeff = new VectorFloat())
-            {
-                Invoke.sacsegmentation_pointxyzi_segment(_ptr, inliers, coeff);
-                coefficients = coeff.ToArray();
-            }
-
-            return coefficients;
+            Invoke.sacsegmentation_pointxyzi_segment(_ptr, inliers, coeff);
         }
 
         public override PointCloud<PointXYZI>? Input
